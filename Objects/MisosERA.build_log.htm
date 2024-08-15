@@ -1,0 +1,1365 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: asadsads i.ryabov@ttri.ru, kjgjgj, LIC=IK1BF-612RB-JJQ6S-L35UV-TT55N-VQ3AT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Develop\SW\Keil\MisosERA.uvprojx
+Project File Date:  08/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./main.h(4): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(105): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    DMA1_STR6_IRQn              = 17,     /*!< DMA1 Stream 6 global Interrupt                                    */
+                                    ^~
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(316): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(342): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(369): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(395): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(421): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(448): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(475): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(500): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(526): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(554): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(572): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(596): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(621): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(640): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(662): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(696): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(725): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(742): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(756): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(795): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(824): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(876): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(890): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(959): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(996): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1027): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1066): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1115): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1138): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1153): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1174): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1195): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1207): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1220): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1247): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1269): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1292): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1331): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1342): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1353): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1373): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1396): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1422): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1433): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1445): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1464): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1484): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1503): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1535): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1563): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1577): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1589): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1603): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1627): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1651): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1663): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1675): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1688): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1708): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1725): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1753): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1778): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1792): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1818): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1865): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1908): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1927): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1953): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1977): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(1996): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2030): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2100): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2112): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2123): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2135): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2146): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2157): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2168): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2179): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2198): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2212): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2223): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2239): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2274): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2309): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2344): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2385): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2415): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2426): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2437): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2448): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2459): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2481): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2496): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2508): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2522): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2542): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2557): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2571): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2585): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2605): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2647): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2695): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2716): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2772): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2788): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2804): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2831): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2849): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2875): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2889): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2930): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(2971): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3061): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3088): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3106): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3122): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3135): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3147): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3174): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3194): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3209): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3227): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3245): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3270): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3296): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3316): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3337): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3349): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3361): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3373): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3385): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3397): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3409): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3425): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3442): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3459): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3475): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3487): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3499): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3511): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3523): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3538): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3569): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3590): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3542): warning: padding size of 'struct (unnamed at C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h:3542:9)' with 1 byte to alignment boundary [-Wpadded]
+        struct
+        ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3607): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3640): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3673): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3706): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3739): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3772): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3811): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3822): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3833): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3844): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3862): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3874): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3887): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3905): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3930): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3969): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(3993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4017): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4087): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4098): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4118): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4130): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4141): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4152): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4163): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4174): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4185): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4197): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4217): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4229): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4264): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4289): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4326): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4340): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4385): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4398): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4410): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4423): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4435): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4447): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4460): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4472): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4486): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4500): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4513): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4525): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4537): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4558): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4585): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4603): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4630): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4648): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4675): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4693): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4720): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4744): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4764): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4784): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4804): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4828): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4849): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4866): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4880): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4913): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4934): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4952): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4966): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4982): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(4999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5066): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5086): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5101): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5120): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5132): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5153): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5166): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5177): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5199): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5227): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5257): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5302): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5316): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5332): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5348): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5364): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5380): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5394): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5408): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5422): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5436): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5455): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5466): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5479): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5494): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5509): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5524): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5541): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5565): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5596): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5617): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5627): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5637): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5653): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5664): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5682): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5696): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5705): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5726): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5752): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5769): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5783): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5795): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5805): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5819): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5829): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5843): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5853): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5867): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5881): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5898): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5914): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5930): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5946): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5964): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5975): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(5988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6001): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6040): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6067): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6078): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6088): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6099): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6109): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6120): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6130): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6140): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6151): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6163): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6179): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6201): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6211): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6221): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6232): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6243): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6276): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6329): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6344): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6356): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6366): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6376): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6387): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6405): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6424): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6440): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6451): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6462): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6475): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6488): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6501): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6514): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6525): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6536): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6547): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6558): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6569): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6580): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6591): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6602): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6613): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6624): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6635): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6653): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6673): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6683): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6698): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6710): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6735): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6748): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6764): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6781): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6796): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6812): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6832): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6848): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6870): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6881): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6914): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6925): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6947): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6958): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6975): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(6989): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7004): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7017): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7028): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7053): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7066): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include\apm32f4xx.h(7080): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+main.c(1): warning: In file included from...
+./main.h(5): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_gpio.h(53): warning: // comments are not allowed in this language [-Wcomment]
+    GPIO_MODE_IN   = 0x00, //!< GPIO Input Mode
+                           ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_gpio.h(110): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    GPIO_PIN_ALL = ((uint32_t)0XFFFF),
+                                     ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_gpio.h(133): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    GPIO_PIN_SOURCE_15,
+                      ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_gpio.h(214): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    GPIO_AF_EVENTOUT            = 0x0F, //!< EVENTOUT Alternate Function mapping
+                                      ^
+main.c(1): warning: In file included from...
+./main.h(6): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_rcm.h(52): warning: // comments are not allowed in this language [-Wcomment]
+    RCM_HSE_CLOSE,    //!< CLOSE HSE
+                      ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_rcm.h(178): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    RCM_SDRAM_DIV_4 = 2,
+                       ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_rcm.h(369): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    RCM_FLAG_LPRRST  = 0x21F,   //!< Low-power reset flag
+                            ^~
+main.c(1): warning: In file included from...
+./main.h(7): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(52): warning: // comments are not allowed in this language [-Wcomment]
+    CAN_MODE_NORMAL          = ((uint8_t)0x00),  //!< normal mode
+                                                 ^
+main.c(1): warning: In file included from...
+./main.h(8): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_fmc.h(94): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+    FMC_VOLTAGE_4  = (uint8_t)0x03,
+                                  ^
+main.c(1): warning: In file included from...
+./main.h(11): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void Led_Init();
+             ^
+              void
+./main.h(12): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void CAN_Init();
+             ^
+              void
+./main.h(13): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void RCM_Init();
+             ^
+              void
+./main.h(14): warning: // comments are not allowed in this language [-Wcomment]
+// variables
+^
+./main.h(20): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __MAIN_H */
+                     ^
+main.c(3): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void Led_Init()
+             ^
+              void
+main.c(3): warning: no previous prototype for function 'Led_Init' [-Wmissing-prototypes]
+void Led_Init()
+     ^
+./main.h(11): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void Led_Init();
+     ^
+              void
+main.c(17): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void CAN_Init()
+             ^
+              void
+main.c(21): warning: // comments are not allowed in this language [-Wcomment]
+   // Натсройка GPIO для CAN
+   ^
+main.c(1): warning: In file included from...
+./main.h(7): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(250): warning: padding struct 'CAN_Config_T' with 1 byte to align 'prescaler' [-Wpadded]
+    uint16_t            prescaler;    //!< Specifies the length of a time quantum. It can be 1 to 1024.
+                        ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(259): warning: padding struct 'CAN_FilterConfig_T' with 1 byte to align 'filterIdHigh' [-Wpadded]
+    uint16_t            filterIdHigh;      /*This parameter can be a value between 0x0000 and 0xFFFF */
+                        ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(256): warning: padding size of 'CAN_FilterConfig_T' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+main.c(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   int StatusCAN = CAN_Config(CAN1, &configCAN);
+       ^
+./main.h(19): note: previous declaration is here
+static int StatusCAN = 0;
+           ^
+main.c(24): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+   GPIO_Config_T configStruct;
+                 ^
+main.c(79): warning: unused variable 'StatusCAN' [-Wunused-variable]
+   int StatusCAN = CAN_Config(CAN1, &configCAN);
+       ^
+main.c(17): warning: no previous prototype for function 'CAN_Init' [-Wmissing-prototypes]
+void CAN_Init()
+     ^
+./main.h(12): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void CAN_Init();
+     ^
+              void
+main.c(91): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void RCM_Init()
+             ^
+              void
+main.c(94): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   while(RCM_WaitHSEReady() != SUCCESS) {;};
+                                         ^
+main.c(94): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   while(RCM_WaitHSEReady() != SUCCESS) {;};
+                                           ^
+main.c(91): warning: no previous prototype for function 'RCM_Init' [-Wmissing-prototypes]
+void RCM_Init()
+     ^
+./main.h(13): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void RCM_Init();
+     ^
+              void
+main.c(110): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main_Init()
+             ^
+              void
+main.c(110): warning: no previous prototype for function 'main_Init' [-Wmissing-prototypes]
+int main_Init()
+    ^
+main.c(110): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int main_Init()
+^
+static 
+main.c(116): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+main.c(118): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main()
+        ^
+         void
+410 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=3460 RO-data=452 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+".\Objects\MisosERA.axf" - 0 Error(s), 410 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Geehy
+                https://www.geehy.com/uploads/tool/Geehy.APM32F4xx_DFP.1.0.1.pack
+                Geehy.APM32F4xx_DFP.1.0.1
+                Geehy Semiconductor APM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: CAN Version: 1.0.1
+   * Component: FMC Version: 1.0.1
+   * Component: Framework Version: 1.0.1
+   * Component: GPIO Version: 1.0.1
+   * Component: RCM Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Geehy::Device:Startup:1.0.0
+      Source file:   Device/Device/Geehy/APM32F4xx/Source/system_apm32f4xx.c
+      Source file:   Device/Device/Geehy/APM32F4xx/Source/arm/startup_apm32f40x.s
+
+   * Component: Geehy::Device:StdPeriph Drivers:CAN:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_can.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_can.h
+
+   * Component: Geehy::Device:StdPeriph Drivers:FMC:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_fmc.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_fmc.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:Framework:1.0.1
+      Include file:  Device/Templates/apm32f4xx_int.h
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_misc.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_misc.c
+      Source file:   Device/Templates/apm32f4xx_int.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:GPIO:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_gpio.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_gpio.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:RCM:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_rcm.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_rcm.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

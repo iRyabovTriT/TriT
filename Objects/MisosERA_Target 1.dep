@@ -1,0 +1,80 @@
+Dependencies for Project 'MisosERA', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\main.c)(0x66BE1FF1)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/main.o -MD)
+I (main.h)(0x66BDF796)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_gpio.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_rcm.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_can.h)(0x621CF8CC)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_fmc.h)(0x621CF67A)
+F (.\main.h)(0x66BDF796)()
+F (C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_can.c)(0x621CFDEC)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/apm32f4xx_can.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_can.h)(0x621CF8CC)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_rcm.h)(0x621CE2C6)
+F (C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_gpio.c)(0x621CE2C6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/apm32f4xx_gpio.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_gpio.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_rcm.h)(0x621CE2C6)
+F (C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_misc.c)(0x621CFC08)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/apm32f4xx_misc.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_misc.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+F (C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_rcm.c)(0x621CE2C6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/apm32f4xx_rcm.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_rcm.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+F (RTE/Device/APM32F407VG/startup_apm32f40x.s)(0x621CE422)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_apm32f40x.o)
+F (RTE/Device/APM32F407VG/system_apm32f4xx.c)(0x62A9DA6C)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/system_apm32f4xx.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+F (C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_fmc.c)(0x62A9D9EC)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include-IC:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/apm32f4xx_fmc.o -MD)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_fmc.h)(0x621CF67A)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\apm32f4xx.h)(0x621CE96E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63888F58)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\Device\Geehy\APM32F4xx\Include\system_apm32f4xx.h)(0x621CE2C6)
+I (C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_rcm.h)(0x621CE2C6)

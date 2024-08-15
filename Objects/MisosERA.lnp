@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\apm32f4xx_can.o"
+".\objects\apm32f4xx_gpio.o"
+".\objects\apm32f4xx_misc.o"
+".\objects\apm32f4xx_rcm.o"
+".\objects\startup_apm32f40x.o"
+".\objects\system_apm32f4xx.o"
+".\objects\apm32f4xx_fmc.o"
+--strict --scatter ".\Objects\MisosERA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MisosERA.map" -o .\Objects\MisosERA.axf
