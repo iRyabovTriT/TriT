@@ -1,0 +1,129 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: asadsads i.ryabov@ttri.ru, kjgjgj, LIC=IK1BF-612RB-JJQ6S-L35UV-TT55N-VQ3AT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Develop\Keil\MisosERA.uvprojx
+Project File Date:  08/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+".\Objects\MisosERA.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.6.0
+   * Component: Keil RTX5 Variant: Library Version: 5.5.4
+
+Package Vendor: Geehy
+                https://www.geehy.com/uploads/tool/Geehy.APM32F4xx_DFP.1.0.1.pack
+                Geehy.APM32F4xx_DFP.1.0.1
+                Geehy Semiconductor APM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: CAN Version: 1.0.1
+   * Component: EINT Version: 1.0.1
+   * Component: FMC Version: 1.0.1
+   * Component: Framework Version: 1.0.1
+   * Component: GPIO Version: 1.0.1
+   * Component: I2C Version: 1.0.1
+   * Component: RCM Version: 1.0.1
+   * Component: USART Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS
+  ./RTE/_Target_1
+  C:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/CMSIS/Include
+  C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/Device/Geehy/APM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.4
+      Source file:   CMSIS/RTOS2/RTX/Template/main.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
+      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
+      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
+      Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
+      Source file:   CMSIS/RTOS2/RTX/Template/Events.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
+      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib
+
+   * Component: Geehy::Device:Startup:1.0.0
+      Source file:   Device/Device/Geehy/APM32F4xx/Source/arm/startup_apm32f40x.s
+      Source file:   Device/Device/Geehy/APM32F4xx/Source/system_apm32f4xx.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:CAN:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_can.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_can.h
+
+   * Component: Geehy::Device:StdPeriph Drivers:EINT:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_eint.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_eint.h
+
+   * Component: Geehy::Device:StdPeriph Drivers:FMC:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_fmc.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_fmc.h
+
+   * Component: Geehy::Device:StdPeriph Drivers:Framework:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_misc.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_misc.c
+      Include file:  Device/Templates/apm32f4xx_int.h
+      Source file:   Device/Templates/apm32f4xx_int.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:GPIO:1.0.1
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_gpio.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_gpio.h
+
+   * Component: Geehy::Device:StdPeriph Drivers:I2C:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_i2c.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_i2c.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:RCM:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_rcm.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_rcm.c
+
+   * Component: Geehy::Device:StdPeriph Drivers:USART:1.0.1
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_usart.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_usart.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
