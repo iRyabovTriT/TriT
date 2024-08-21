@@ -23,7 +23,8 @@ void GPIO_Init()
    configStruct.otype = GPIO_OTYPE_PP;
    configStruct.speed = GPIO_SPEED_50MHz;
    GPIO_Config(GPIOD, &configStruct);
-   GPIOD->BSCH = GPIO_PIN_13 | GPIO_PIN_12;
+   GPIOD->BSCH = GPIO_PIN_13 | GPIO_PIN_12; 
+   
 }
 
 void CAN_Init()
