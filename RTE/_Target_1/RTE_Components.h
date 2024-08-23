@@ -13,8 +13,12 @@
 /* ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.4 */
 #define RTE_CMSIS_RTOS2                 /* CMSIS-RTOS2 */
         #define RTE_CMSIS_RTOS2_RTX5            /* CMSIS-RTOS2 Keil RTX5 */
+/* Geehy::Device:StdPeriph Drivers:ADC:1.0.1 */
+#define RTE_DEVICE_STDPERIPH_ADC
 /* Geehy::Device:StdPeriph Drivers:CAN:1.0.1 */
 #define RTE_DEVICE_STDPERIPH_CAN
+/* Geehy::Device:StdPeriph Drivers:DMA:1.0.1 */
+#define RTE_DEVICE_STDPERIPH_DMA
 /* Geehy::Device:StdPeriph Drivers:EINT:1.0.1 */
 #define RTE_DEVICE_STDPERIPH_EINT
 /* Geehy::Device:StdPeriph Drivers:FMC:1.0.1 */

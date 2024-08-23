@@ -11,6 +11,7 @@
 #include "apm32f4xx_misc.h"
 #include "apm32f4xx_i2c.h"
 #include "i2c.h"
+#include "QMA6100.h"
 
 
 #define CAN1_TX_IRQn 19
@@ -34,6 +35,6 @@ static int ErrorValue = 0;
 
 //Test
 static int StatusCAN = 0;
-static int StatucCANMessage = 0;
+static int StatusCANMessage = 0;
 static int StatucCANMode = 0;
 #endif /* __MAIN_H */

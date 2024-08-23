@@ -25,10 +25,18 @@ void GPIO_Init()
    GPIO_Config(GPIOD, &configStruct);
    GPIOD->BSCH = GPIO_PIN_13 | GPIO_PIN_12; 
    
+   //QMA6100 Power
+   configStruct.pin = GPIO_PIN_15;
+   configStruct.mode = GPIO_MODE_OUT;
+   configStruct.otype = GPIO_OTYPE_PP;
+   configStruct.speed = GPIO_SPEED_50MHz;
+   GPIO_Config(GPIOD, &configStruct);
 }
 
 void CAN_Init()
 {
+   
+   
    RCM_EnableAHB1PeriphClock(RCM_AHB1_PERIPH_GPIOC);
    RCM_EnableAHB1PeriphClock(RCM_AHB1_PERIPH_GPIOB);
    
@@ -47,6 +55,7 @@ void CAN_Init()
    GPIOConfig.speed = GPIO_SPEED_50MHz;
    GPIOConfig.mode = GPIO_MODE_AF;
    GPIOConfig.otype = GPIO_OTYPE_PP;
+   GPIOConfig.pupd = GPIO_PUPD_UP;
    GPIO_Config(GPIOB, &GPIOConfig);
    
    GPIOConfig.pin = GPIO_PIN_2; //  CAN STB
@@ -56,10 +65,15 @@ void CAN_Init()
    GPIO_ResetBit(GPIOC, GPIO_PIN_2);
    
    RCM_EnableAPB1PeriphClock(RCM_APB1_PERIPH_CAN1);
-   Delay(0xfff);
+   Delay(0xfffff);
+   
+   CAN_Reset(CAN1);
+   
    CAN_DisableDBGFreeze(CAN1);
    
    CAN_Config_T configCAN;
+   
+   CAN_ConfigStructInit(&configCAN);
    
    configCAN.mode = CANMode; 
    configCAN.syncJumpWidth = CAN_SJW_1;
@@ -71,6 +85,10 @@ void CAN_Init()
    configCAN.nonAutoRetran = DISABLE;
    configCAN.rxFIFOLockMode = DISABLE;
    configCAN.txFIFOPriority = DISABLE;
+   
+   //StatusCAN = CAN_Config(CAN1, &configCAN);
+   
+   CAN1->MCTRL_B.INITREQ = BIT_RESET;
    
    CAN_FilterConfig_T CAN_Filter;
    CAN_Filter.filterNumber = 0;
@@ -92,8 +110,7 @@ void CAN_Init()
    TxMessage.remoteTxReq = CAN_RTXR_DATA;
    TxMessage.dataLengthCode = 0x8;
    TxMessage.data[0] = 0xf1;
-   //StatucCANMessage = CAN_TxMessage(CAN1, &TxMessage);
-   
+   StatusCANMessage = CAN_TxMessage(CAN1, &TxMessage);
    StatusCAN = CAN_Config(CAN1, &configCAN);
    StatucCANMode = CAN_OperatingMode(CAN1, CAN_OPERATING_MODE_NORMAL);
 }
@@ -110,7 +127,6 @@ void CAN1_RX0_IRQHandler() // Прерывание по приходу сооб�
    CAN_RxMessage(CAN1, CAN_RX_FIFO_0, &MessageCAN);
    CAN_ReleaseFIFO(CAN1, CAN_RX_FIFO_0);
    GPIO_ToggleBit(GPIOD, GPIO_PIN_13);
-   Delay(0xffffff);
 }
 
 void CAN1_RX1_IRQHandler()
@@ -152,9 +168,8 @@ int main_Init()
    GPIO_Init();
    CAN_Init();  
    IRQ_Init();
-   I2C_Setting();
-   Delay(0x1fff);
-   
+   //I2C_Setting();
+   //Delay(0x1fff);
 }
 
 void I2C_Setting()
@@ -164,20 +179,23 @@ void I2C_Setting()
    i2c_init();
 }
 
+
 int main()
 {
    //RCM->PLL1CFG = 0x2400301T0;
    main_Init();
   
+   //PowerChangeQMA6100(ENABLE_QMA6100);
    
+   
+   Delay(0xffffff);
    // Test I2C
-   i2c_write(ADDRESS_ACCEL, 0x00, 0x22);
+   //i2c_write(ADDRESS_ACCEL, 0x00, 0x22);
    
    Delay(0xffffff);
    
-   uint8_t data = i2c_read(ADDRESS_ACCEL, 0x00);
-   
-   
+   //uint8_t data = i2c_read(ADDRESS_ACCEL, 0x00);
+      
    while(1)
    {
       if(1)//!ErrorValue)
@@ -196,7 +214,7 @@ void IRQ_Init()
    __enable_irq ();
 
    #if CAN_IRQ_STATUS
-   //NVIC_EnableIRQ(CAN1_TX_IRQn);
+   NVIC_EnableIRQ(CAN1_TX_IRQn);
    NVIC_EnableIRQ(CAN1_RX0_IRQn);
   // CAN_EnableInterrupt(CAN1, CAN_INT_TXME);
    CAN_EnableInterrupt(CAN1, CAN_INT_F0MP);

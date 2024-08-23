@@ -1,6 +1,7 @@
 --cpu=Cortex-M4.fp.sp
 ".\objects\main.o"
 ".\objects\i2c.o"
+".\objects\qma6100.o"
 "C:\Users\iryab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib"
 ".\objects\rtx_lib.o"
 ".\objects\rtx_config.o"
@@ -14,6 +15,8 @@
 ".\objects\apm32f4xx_usart.o"
 ".\objects\startup_apm32f40x.o"
 ".\objects\system_apm32f4xx.o"
+".\objects\apm32f4xx_adc.o"
+".\objects\apm32f4xx_dma.o"
 --strict --scatter ".\Objects\MisosERA.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
