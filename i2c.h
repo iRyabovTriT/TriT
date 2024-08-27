@@ -13,5 +13,6 @@ void i2c_write(uint8_t address, uint8_t registry, uint8_t data);
 void I2C_ClearErrorFlag(void);
 void fault_i2c(void);
 
+
 #endif /* __I2C_H */
 

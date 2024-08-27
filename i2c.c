@@ -71,50 +71,47 @@ void i2c_init(void)
 
 uint8_t i2c_read(uint8_t address, uint8_t registry)
 {
-   uint8_t count = 0;
-   
-   while(I2C3->STS2_B.BUSBSYFLG){if(ErrorI2C) { fault_i2c(); return 0;}};
-   
-   int a = 5;
-   while(a--);
-   
-   I2C3->CTRL1_B.START = 0x1;                // Generated Start
-
-   while(!(I2C3->STS1_B.STARTFLG)){if(ErrorI2C) {fault_i2c(); return 0;}};
-   (void) I2C3->STS2;;
-   I2C3->DATA = address << 1;
-   
+   while(I2C3->STS2_B.BUSBSYFLG);
+   I2C3->CTRL1_B.START = 0x1;
    (void) I2C3->STS1;
    
-   while(!(I2C3->STS1_B.ADDRFLG)){if(ErrorI2C) { fault_i2c(); return 0;}};
+   while(!I2C3->STS1_B.STARTFLG){};
+   I2C3->DATA = address << 1;
+      
+   while(!I2C3->STS1_B.ADDRFLG);
+   (void) I2C3->STS1;
    (void) I2C3->STS2;
-   
-   while(!(I2C3->STS1_B.TXBEFLG));
+      
+   while(!I2C3->STS1_B.TXBEFLG);
    I2C3->DATA = registry;
    
-  // I2C3->CTRL1_B.STOP = 0x1;
-   
-   //a = 5;
-  // while(a--);
+   //I2C3->CTRL1_B.STOP = 0x1;
+   //while(!I2C3->STS1_B.STOPFLG);
    
    I2C3->CTRL1_B.START = 0x1;
-   
-   while(!(I2C3->STS1_B.STARTFLG)){if(ErrorI2C){ fault_i2c(); return 0;}};
-   I2C3->DATA = (address << 1) | 1;
-   
-   while(!(I2C3->STS1_B.ADDRFLG)){if(ErrorI2C) { fault_i2c(); return 0;}};
+   while(!I2C3->STS1_B.STARTFLG){};
+      
+   I2C3->DATA = address << 1 | 1;
+      
+   while(!I2C3->STS1_B.ADDRFLG);
    I2C3->CTRL1_B.ACKEN = 0x0;
-   
+      
    (void) I2C3->STS2;
-   
-   while(!(I2C3->STS1_B.RXBNEFLG)){if(ErrorI2C) { fault_i2c(); return 0;}};
+      
+   while(!I2C3->STS1_B.RXBNEFLG);
    uint8_t value = (uint8_t)I2C3->DATA;
-   
+      
    I2C3->CTRL1_B.STOP = 0x1;
-   
-   I2C3->CTRL1_B.STOP = 0x0;
+   //while(!I2C3->STS1_B.STOPFLG);
+   I2C3->CTRL1_B.ACKEN = 0x1;
+      
+   I2C_ClearErrorFlag();
+      
+      
    return value;
+   
 }
+
 
 void i2c_read_many(uint8_t address, uint8_t registry, uint8_t * result, uint8_t length)
 {
@@ -204,13 +201,16 @@ void i2c_write_many(uint8_t address, uint8_t registry, uint8_t* buf, uint32_t le
 
 void i2c_write(uint8_t address, uint8_t registry, uint8_t data)
 {
+   //I2C3->CTRL1_B.ACKEN = 0x1; // Test !!
+   
    int a = 5;
    while(a--)
    
    I2C3->CTRL1_B.START = 0x1;                // Generated Start
    
    while(!(I2C3->STS1_B.STARTFLG)){if(ErrorI2C) {fault_i2c(); return;}};
-   (void) I2C3->STS2;
+   
+   (void) I2C3->STS1;
    I2C3->DATA_B.DATA = address << 1;                // Write device address
    
    while(!(I2C3->STS1_B.ADDRFLG)){if(ErrorI2C) {fault_i2c(); return;}};

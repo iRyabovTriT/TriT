@@ -32,6 +32,9 @@ void RCM_Init(void);
 void IRQ_Init(void);
 void I2C_Setting(void);
 void I2C3_Reset(void);
+
+void Test_I2C_Init(void);  /// Test default Init I2C
+void Test_I2C_Read(uint8_t address, uint8_t registry, uint8_t * data);
 // variables
 static int ErrorValue = 0;
 
