@@ -8,9 +8,13 @@
 
 // Config CAN
 #define CANMode CANMode_DEBUG   // CANMode_Normal OR CANMode_DEBUG
+
 #define CAN_IRQ_STATUS DISABLE_IRQ   // ENABLE_IRQ or DISABLE_IRQ
+#define I2C_IRQ_STATUS ENABLE_IRQ
 
 #define ADDRESS_ACCEL 0x12
+
+
 
 void GPIO_Init()
 {
@@ -168,7 +172,7 @@ int main_Init()
    GPIO_Init();
    CAN_Init();  
    IRQ_Init();
-   //I2C_Setting();
+   I2C_Setting();
    //Delay(0x1fff);
 }
 
@@ -176,8 +180,46 @@ void I2C_Setting()
 {
    rcc_I2C_init();
    i2c_setup_gpio();
-   i2c_init();
+      
+   I2C3_Reset();
+   
+   I2C_Config_T I2C_Config_v;
+   I2C_Config_v.mode = I2C_MODE_I2C;
+   I2C_Config_v.dutyCycle = I2C_DUTYCYCLE_2;
+   I2C_Config_v.ownAddress1 = 0;
+   I2C_Config_v.ack = I2C_ACK_ENABLE;
+   I2C_Config_v.clockSpeed = 100000;
+   
+   I2C_Config(I2C3, &I2C_Config_v);
+   
+   #if I2C_IRQ_STATUS
+   NVIC_EnableIRQ(I2C3_EV_IRQn);
+   NVIC_EnableIRQ(I2C3_ER_IRQn);
+  // CAN_EnableInterrupt(CAN1, CAN_INT_TXME);
+   I2C_EnableInterrupt(I2C3, I2C_INT_BUF);
+   I2C_EnableInterrupt(I2C3, I2C_INT_ERR);
+   #endif
+   
+   //i2c_init();
 }
+
+void I2C3_Reset(void)
+{
+   I2C3->CTRL1_B.SWRST = 1;
+   Delay(0xff);
+   I2C3->CTRL1_B.SWRST = 0;
+   
+   I2C_Config_T I2C_Config_v;
+   I2C_Config_v.mode = I2C_MODE_I2C;
+   I2C_Config_v.dutyCycle = I2C_DUTYCYCLE_2;
+   I2C_Config_v.ownAddress1 = 0;
+   I2C_Config_v.ack = I2C_ACK_ENABLE;
+   I2C_Config_v.clockSpeed = 100000;
+   
+   I2C_Config(I2C3, &I2C_Config_v);
+}
+
+uint8_t dataAcc[2] = {0};
 
 
 int main()
@@ -185,25 +227,52 @@ int main()
    //RCM->PLL1CFG = 0x2400301T0;
    main_Init();
   
-   //PowerChangeQMA6100(ENABLE_QMA6100);
+   PowerChangeQMA6100(ENABLE_QMA6100);
    
    
    Delay(0xffffff);
    // Test I2C
-   //i2c_write(ADDRESS_ACCEL, 0x00, 0x22);
+   static uint8_t dataI2C = 0;
+   static uint8_t LockI2C = 0;
+   
+   //dataI2C = i2c_read(ADDRESS_ACCEL, 0x00);
    
    Delay(0xffffff);
    
+   uint32_t HCLKFreq = RCM_ReadHCLKFreq();
+   uint32_t SYSCLKFreq = RCM_ReadSYSCLKFreq();
+   
+   sfe_qma6100p_pm_t sfe_qma6100p_pm;
+   sfe_qma6100p_pm.mode_bit = 1;
+   sfe_qma6100p_pm.mclk_sel = 5;
+   
    //uint8_t data = i2c_read(ADDRESS_ACCEL, 0x00);
-      
+   //i2c_write(ADDRESS_ACCEL, 0x11, 1 << 7);
+   Delay(0xffffff);
+   
    while(1)
    {
       if(1)//!ErrorValue)
       {
          Delay(0xffffff);
          GPIO_ToggleBit(GPIOD, GPIO_PIN_12);
+         //Delay(0xffffff);
+         if(!LockI2C)
+         {
+            //LockI2C = 1;
+            uint8_t data = (sfe_qma6100p_pm.mode_bit << 7) | sfe_qma6100p_pm.mclk_sel;
+            i2c_write(ADDRESS_ACCEL, SFE_QMA6100P_PM, data);
+            
+            //Delay(0xffffff);
+            //dataI2C = i2c_read(ADDRESS_ACCEL, 0x13);
+            
+            //Delay(0xffffff);
+            //dataI2C = i2c_read(ADDRESS_ACCEL, SFE_QMA6100P_PM);
+         }
+            
+         //i2c_read_many(ADDRESS_ACCEL, 0x01, &dataAcc, 2);
+         //Delay(0xffffff);
          
-         Delay(0xffffff);
       }
       
    }
@@ -223,4 +292,15 @@ void IRQ_Init()
    #endif
 }
 
+void I2C3_EV_IRQHandler(void)
+{
+   GPIO_ToggleBit(GPIOD, GPIO_PIN_13);
+}
 
+void I2C3_ER_IRQHandler()
+{
+   I2C3_Reset();
+   ErrorI2C = 1;
+   //I2C3->STS1_B.BERRFLG = 0;
+   GPIO_ToggleBit(GPIOD, GPIO_PIN_13);
+}

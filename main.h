@@ -16,6 +16,8 @@
 
 #define CAN1_TX_IRQn 19
 #define CAN1_RX0_IRQn 20
+#define I2C3_EV_IRQn 72
+#define I2C3_ER_IRQn 73
 
 #define CANMode_DEBUG CAN_MODE_SILENT_LOOPBACK
 #define CANMode_Normal CAN_MODE_NORMAL
@@ -29,9 +31,11 @@ void CAN_Init(void);
 void RCM_Init(void);
 void IRQ_Init(void);
 void I2C_Setting(void);
+void I2C3_Reset(void);
 // variables
 static int ErrorValue = 0;
 
+uint8_t ErrorI2C = 0;
 
 //Test
 static int StatusCAN = 0;

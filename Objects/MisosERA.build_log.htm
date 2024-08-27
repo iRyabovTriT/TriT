@@ -22,7 +22,7 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\Develop\Keil\MisosERA.uvprojx
-Project File Date:  08/23/2024
+Project File Date:  08/26/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
@@ -1242,20 +1242,26 @@ main.c(1): warning: In file included from...
 // Reports which function caused an interrupt
 ^
 main.c(1): warning: In file included from...
-./main.h(32): warning: // comments are not allowed in this language [-Wcomment]
+./main.h(35): warning: // comments are not allowed in this language [-Wcomment]
 // variables
 ^
-./main.h(40): warning: no newline at end of file [-Wnewline-eof]
+./main.h(38): warning: no previous extern declaration for non-static variable 'ErrorI2C' [-Wmissing-variable-declarations]
+uint8_t ErrorI2C = 0;
+        ^
+./main.h(38): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t ErrorI2C = 0;
+^
+./main.h(44): warning: no newline at end of file [-Wnewline-eof]
 #endif /* __MAIN_H */
                      ^
 main.c(9): warning: // comments are not allowed in this language [-Wcomment]
 // Config CAN
 ^
-main.c(15): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(19): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void GPIO_Init()
               ^
                void
-main.c(36): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(40): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void CAN_Init()
              ^
               void
@@ -1273,21 +1279,21 @@ typedef struct
 C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(272): warning: padding size of 'CAN_TxMessage_T' with 1 byte to alignment boundary [-Wpadded]
 typedef struct
         ^
-main.c(46): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+main.c(50): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
    GPIO_Config_T GPIOConfig;
                  ^
-main.c(118): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(122): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void CAN1_TX_IRQHandler() // 
                        ^
                         void
-main.c(118): warning: no previous prototype for function 'CAN1_TX_IRQHandler' [-Wmissing-prototypes]
+main.c(122): warning: no previous prototype for function 'CAN1_TX_IRQHandler' [-Wmissing-prototypes]
 void CAN1_TX_IRQHandler() // 
      ^
-main.c(118): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(122): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void CAN1_TX_IRQHandler() // 
 ^
 static 
-main.c(124): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(128): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void CAN1_RX0_IRQHandler() // Прерывание по приходу сообщения CAN
                         ^
                          void
@@ -1296,66 +1302,137 @@ main.c(1): warning: In file included from...
 C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_can.h(285): warning: padding size of 'CAN_RxMessage_T' with 2 bytes to alignment boundary [-Wpadded]
 typedef struct
         ^
-main.c(124): warning: no previous prototype for function 'CAN1_RX0_IRQHandler' [-Wmissing-prototypes]
+main.c(128): warning: no previous prototype for function 'CAN1_RX0_IRQHandler' [-Wmissing-prototypes]
 void CAN1_RX0_IRQHandler() // Прерывание по приходу сообщения CAN
      ^
-main.c(124): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(128): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void CAN1_RX0_IRQHandler() // Прерывание по приходу сообщения CAN
 ^
 static 
-main.c(132): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(136): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void CAN1_RX1_IRQHandler()
                         ^
                          void
-main.c(132): warning: no previous prototype for function 'CAN1_RX1_IRQHandler' [-Wmissing-prototypes]
+main.c(136): warning: no previous prototype for function 'CAN1_RX1_IRQHandler' [-Wmissing-prototypes]
 void CAN1_RX1_IRQHandler()
      ^
-main.c(132): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(136): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void CAN1_RX1_IRQHandler()
 ^
 static 
-main.c(143): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(147): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void RCM_Init()
              ^
               void
-main.c(146): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+main.c(150): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
    while(RCM_WaitHSEReady() != SUCCESS) {;};
                                          ^
-main.c(146): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+main.c(150): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
    while(RCM_WaitHSEReady() != SUCCESS) {;};
                                            ^
-main.c(165): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(169): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 int main_Init()
              ^
               void
-main.c(165): warning: no previous prototype for function 'main_Init' [-Wmissing-prototypes]
+main.c(169): warning: no previous prototype for function 'main_Init' [-Wmissing-prototypes]
 int main_Init()
     ^
-main.c(165): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(169): note: declare 'static' if the function is not intended to be used outside of this translation unit
 int main_Init()
 ^
 static 
-main.c(173): warning: non-void function does not return a value [-Wreturn-type]
+main.c(177): warning: non-void function does not return a value [-Wreturn-type]
 }
 ^
-main.c(175): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(179): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void I2C_Setting()
                 ^
                  void
-main.c(183): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(1): warning: In file included from...
+./main.h(12): warning: In file included from...
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_i2c.h(275): warning: padding struct 'I2C_Config_T' with 1 byte to align 'dutyCycle' [-Wpadded]
+    I2C_DUTYCYCLE_T     dutyCycle;
+                        ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_i2c.h(278): warning: padding struct 'I2C_Config_T' with 1 byte to align 'ackAddress' [-Wpadded]
+    I2C_ACK_ADDRESS_T   ackAddress;
+                        ^
+C:/Users/iryab/AppData/Local/Arm/Packs/Geehy/APM32F4xx_DFP/1.0.1/Device/APM32F4xx_StdPeriphDriver/inc\apm32f4xx_i2c.h(271): warning: padding size of 'I2C_Config_T' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+main.c(196): warning: integer constant not in range of enumerated type 'IRQn_Type' (aka 'enum IRQn') [-Wassign-enum]
+   NVIC_EnableIRQ(I2C3_EV_IRQn);
+                  ^
+./main.h(19): note: expanded from macro 'I2C3_EV_IRQn'
+#define I2C3_EV_IRQn 72
+                     ^
+main.c(197): warning: integer constant not in range of enumerated type 'IRQn_Type' (aka 'enum IRQn') [-Wassign-enum]
+   NVIC_EnableIRQ(I2C3_ER_IRQn);
+                  ^
+./main.h(20): note: expanded from macro 'I2C3_ER_IRQn'
+#define I2C3_ER_IRQn 73
+                     ^
+main.c(186): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+   I2C_Config_T I2C_Config_v;
+                ^
+main.c(212): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+   I2C_Config_T I2C_Config_v;
+                ^
+main.c(222): warning: no previous extern declaration for non-static variable 'dataAcc' [-Wmissing-variable-declarations]
+uint8_t dataAcc[2] = {0};
+        ^
+main.c(222): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t dataAcc[2] = {0};
+^
+main.c(225): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 int main()
         ^
          void
-main.c(212): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(263): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+            uint8_t data = (sfe_qma6100p_pm.mode_bit << 7) | sfe_qma6100p_pm.mclk_sel;
+                    ~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(235): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+   static uint8_t dataI2C = 0;
+                  ^
+main.c(242): warning: unused variable 'HCLKFreq' [-Wunused-variable]
+   uint32_t HCLKFreq = RCM_ReadHCLKFreq();
+            ^
+main.c(235): warning: unused variable 'dataI2C' [-Wunused-variable]
+   static uint8_t dataI2C = 0;
+                  ^
+main.c(243): warning: unused variable 'SYSCLKFreq' [-Wunused-variable]
+   uint32_t SYSCLKFreq = RCM_ReadSYSCLKFreq();
+            ^
+main.c(281): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void IRQ_Init()
              ^
               void
-424 warnings generated.
+main.c(295): warning: no previous prototype for function 'I2C3_EV_IRQHandler' [-Wmissing-prototypes]
+void I2C3_EV_IRQHandler(void)
+     ^
+main.c(295): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void I2C3_EV_IRQHandler(void)
+^
+static 
+main.c(300): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void I2C3_ER_IRQHandler()
+                       ^
+                        void
+main.c(306): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(300): warning: no previous prototype for function 'I2C3_ER_IRQHandler' [-Wmissing-prototypes]
+void I2C3_ER_IRQHandler()
+     ^
+main.c(300): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void I2C3_ER_IRQHandler()
+^
+static 
+442 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=10236 RO-data=732 RW-data=168 ZI-data=35784  
+Program Size: Code=12092 RO-data=732 RW-data=168 ZI-data=35792  
 FromELF: creating hex file...
-".\Objects\MisosERA.axf" - 0 Error(s), 424 Warning(s).
+".\Objects\MisosERA.axf" - 0 Error(s), 442 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -1402,49 +1479,49 @@ Package Vendor: Geehy
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.4
       Source file:   CMSIS/RTOS2/RTX/Template/main.c
-      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
       Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
-      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
       Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
       Source file:   CMSIS/RTOS2/RTX/Template/Events.c
-      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
+      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
       Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
+      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
       Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
       Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
-      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
 
    * Component: Geehy::Device:Startup:1.0.0
       Source file:   Device/Device/Geehy/APM32F4xx/Source/system_apm32f4xx.c
       Source file:   Device/Device/Geehy/APM32F4xx/Source/arm/startup_apm32f40x.s
 
    * Component: Geehy::Device:StdPeriph Drivers:ADC:1.0.1
-      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_adc.c
       Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_adc.h
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_adc.c
 
    * Component: Geehy::Device:StdPeriph Drivers:CAN:1.0.1
-      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_can.h
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_can.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_can.h
 
    * Component: Geehy::Device:StdPeriph Drivers:DMA:1.0.1
-      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_dma.h
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_dma.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_dma.h
 
    * Component: Geehy::Device:StdPeriph Drivers:EINT:1.0.1
-      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_eint.h
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_eint.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_eint.h
 
    * Component: Geehy::Device:StdPeriph Drivers:FMC:1.0.1
       Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_fmc.h
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_fmc.c
 
    * Component: Geehy::Device:StdPeriph Drivers:Framework:1.0.1
-      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_misc.h
-      Include file:  Device/Templates/apm32f4xx_int.h
-      Source file:   Device/Templates/apm32f4xx_int.c
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_misc.c
+      Include file:  Device/Templates/apm32f4xx_int.h
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_misc.h
+      Source file:   Device/Templates/apm32f4xx_int.c
 
    * Component: Geehy::Device:StdPeriph Drivers:GPIO:1.0.1
       Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_gpio.h
@@ -1455,13 +1532,13 @@ Package Vendor: Geehy
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_i2c.c
 
    * Component: Geehy::Device:StdPeriph Drivers:RCM:1.0.1
-      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_rcm.h
       Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_rcm.c
+      Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_rcm.h
 
    * Component: Geehy::Device:StdPeriph Drivers:USART:1.0.1
-      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_usart.c
       Include file:  Device/APM32F4xx_StdPeriphDriver/inc/apm32f4xx_usart.h
-Build Time Elapsed:  00:00:03
+      Source file:   Device/APM32F4xx_StdPeriphDriver/src/apm32f4xx_usart.c
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
