@@ -41,32 +41,9 @@ void i2c_setup_gpio(void)
    RCM_EnableAPB1PeriphClock(RCM_APB1_PERIPH_I2C3);
 }
 
-void rcc_I2C_init(void)
+void rcc_ACL_I2C_Init(void)
 {
    
-}
-
-void i2c_init(void)
-{
-   uint32_t Clock = 16000000UL; // Частота тактирования модуля
-   uint32_t Speed = 100000UL;   // 100 кГц
-   
-   I2C3->CTRL1_B.SWRST = 1;
-   I2C3->CTRL1 = 0x0;
-   
-   I2C3->CTRL2_B.CLKFCFG = 0x0; //Reset Fq I2C
-   I2C3->CTRL2_B.CLKFCFG = Clock / 1000000UL;
-   
-   uint16_t Value = (uint16_t)(Clock / (Speed * 2));
-   
-   if(Value < 4) Value = 4;
-   
-   I2C3->CLKCTRL |= 80;
-   
-   I2C3->RISETMAX = (Clock / 1000000UL) + 1;
-   
-   I2C3->CTRL1_B.I2CEN = 0x1;
-   I2C3->CTRL1_B.ACKEN = 0x1;
 }
 
 uint8_t i2c_read(uint8_t address, uint8_t registry)

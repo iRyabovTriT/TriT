@@ -15,4 +15,4 @@
   C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_eint.h \
   C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_misc.h \
   C:\Users\iryab\AppData\Local\Arm\Packs\Geehy\APM32F4xx_DFP\1.0.1\Device\APM32F4xx_StdPeriphDriver\inc\apm32f4xx_i2c.h \
-  i2c.h QMA6100.h
+  i2c.h QMA6100.h i2c_accel.h DMA.h

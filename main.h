@@ -30,10 +30,16 @@ void GPIO_Init(void);
 void CAN_Init(void);
 void RCM_Init(void);
 void IRQ_Init(void);
-void I2C_Setting(void);
-void I2C3_Reset(void);
+void ACL_I2C_Init(void);
+void ACL_I2C_DeInit(void);
 
-void Test_I2C_Init(void);  /// Test default Init I2C
+extern uint8_t  ACL_BufferRX[], ACL_BufferTX[];
+
+//void I2C3_Reset(void);
+
+void pause(uint32_t time);
+
+void Test_ACL_I2C_Init(void);  /// Test default Init I2C
 void Test_I2C_Read(uint8_t address, uint8_t registry, uint8_t * data);
 // variables
 static int ErrorValue = 0;
