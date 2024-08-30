@@ -4,6 +4,9 @@
 #include "apm32f4xx_i2c.h"
 #include "i2c.h"
 
+#define TimeOut 4000
+
+uint32_t delay = 0;
 
 extern uint8_t ErrorI2C;
 
@@ -71,18 +74,24 @@ void i2c_init(void)
 
 uint8_t i2c_read(uint8_t address, uint8_t registry)
 {
-   while(I2C3->STS2_B.BUSBSYFLG);
+   delay = TimeOut;
+   while(I2C3->STS2_B.BUSBSYFLG){ 
+   if((delay--) == 0) return 1;};
    I2C3->CTRL1_B.START = 0x1;
    (void) I2C3->STS1;
    
    while(!I2C3->STS1_B.STARTFLG){};
    I2C3->DATA = address << 1;
       
-   while(!I2C3->STS1_B.ADDRFLG);
+   delay = TimeOut;  
+   while(!I2C3->STS1_B.ADDRFLG){ 
+   if((delay--) == 0) return 1;};
    (void) I2C3->STS1;
    (void) I2C3->STS2;
-      
-   while(!I2C3->STS1_B.TXBEFLG);
+   
+   delay = TimeOut;
+   while(!I2C3->STS1_B.TXBEFLG){ 
+   if((delay--) == 0) return 1;};
    I2C3->DATA = registry;
    
    //I2C3->CTRL1_B.STOP = 0x1;
@@ -92,13 +101,17 @@ uint8_t i2c_read(uint8_t address, uint8_t registry)
    while(!I2C3->STS1_B.STARTFLG){};
       
    I2C3->DATA = address << 1 | 1;
-      
-   while(!I2C3->STS1_B.ADDRFLG);
+   
+   delay = TimeOut;   
+   while(!I2C3->STS1_B.ADDRFLG){ 
+   if((delay--) == 0) return 1;};
    I2C3->CTRL1_B.ACKEN = 0x0;
       
    (void) I2C3->STS2;
-      
-   while(!I2C3->STS1_B.RXBNEFLG);
+   
+   delay = TimeOut;
+   while(!I2C3->STS1_B.RXBNEFLG){ 
+   if((delay--) == 0) return 1;};
    uint8_t value = (uint8_t)I2C3->DATA;
       
    I2C3->CTRL1_B.STOP = 0x1;
@@ -202,30 +215,39 @@ void i2c_write_many(uint8_t address, uint8_t registry, uint8_t* buf, uint32_t le
 void i2c_write(uint8_t address, uint8_t registry, uint8_t data)
 {
    //I2C3->CTRL1_B.ACKEN = 0x1; // Test !!
-   
-   int a = 5;
-   while(a--)
-   
+  
    I2C3->CTRL1_B.START = 0x1;                // Generated Start
    
-   while(!(I2C3->STS1_B.STARTFLG)){if(ErrorI2C) {fault_i2c(); return;}};
+   delay = TimeOut;
+   while(!(I2C3->STS1_B.STARTFLG)){ 
+   if((delay--) == 0) return;};
    
    (void) I2C3->STS1;
    I2C3->DATA_B.DATA = address << 1;                // Write device address
    
-   while(!(I2C3->STS1_B.ADDRFLG)){if(ErrorI2C) {fault_i2c(); return;}};
-   (void) I2C3->STS2;
+   delay = TimeOut;
+   while(!(I2C3->STS1_B.ADDRFLG)){ 
+   if((delay--) == 0) return;};
    
    //int a = 5;
    //while(a--)
    
-   while(!(I2C3->STS1_B.TXBEFLG)){if(ErrorI2C) {fault_i2c(); return;}};
+   delay = TimeOut;
+   while(!(I2C3->STS1_B.TXBEFLG)){if(ErrorI2C) 
+   if((delay--) == 0) return;};
+   
    I2C3->DATA = registry;
    
-   while(!(I2C3->STS1_B.BTCFLG)){if(ErrorI2C) {fault_i2c(); return;}};
+   I2C3->CTRL1_B.STOP = 0x1;
+   
+   delay = TimeOut * 2;
+   while(!(I2C3->STS1_B.BTCFLG));//{ 
+      ///if((delay--) == 0) 
+      //   return;};
+   
    I2C3->DATA = data;
    
-   I2C3->CTRL1_B.STOP = 0x1;
+  
    
    //I2C3->CTRL1_B.STOP = 0x0;
 }

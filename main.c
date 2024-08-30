@@ -354,7 +354,7 @@ int main()
    //i2c_write(ADDRESS_ACCEL, 0x11, 1 << 7);
    Delay(0xffffff);
    uint8_t count = 0;
-   i2c_write(ADDRESS_ACCEL, SFE_QMA6100P_PM, settingQMA);
+   //i2c_write(ADDRESS_ACCEL, SFE_QMA6100P_PM, settingQMA);
    
    while(1)
    {
@@ -373,10 +373,10 @@ int main()
             //uint8_t dataTest;
             
             //Test_I2C_Read(ADDRESS_ACCEL, 0x13, &dataTest);
-            
+            //i2c_write(ADDRESS_ACCEL, 0x13, settingQMA);
             Delay(0xffffff);
-            dataI2C = i2c_read(ADDRESS_ACCEL, 0x13);
-            //Delay(0xffffff);
+            dataI2C = i2c_read(ADDRESS_ACCEL, 0x00);
+            Delay(0xffffff);
             //dataI2C = i2c_read(ADDRESS_ACCEL, SFE_QMA6100P_PM);
             count = 0;
          }
