@@ -1390,24 +1390,21 @@ main.c(352): warning: implicit conversion loses integer precision: 'int' to 'uin
 main.c(338): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
    static uint8_t dataI2C = 0;
                   ^
-main.c(346): warning: unused variable 'SYSCLKFreq' [-Wunused-variable]
-   uint32_t SYSCLKFreq = RCM_ReadSYSCLKFreq();
-            ^
-main.c(338): warning: variable 'dataI2C' set but not used [-Wunused-but-set-variable]
-   static uint8_t dataI2C = 0;
-                  ^
-main.c(352): warning: unused variable 'settingQMA' [-Wunused-variable]
-   uint8_t settingQMA = (sfe_qma6100p_pm.mode_bit << 7) | sfe_qma6100p_pm.mclk_sel;
-           ^
-main.c(345): warning: unused variable 'HCLKFreq' [-Wunused-variable]
-   uint32_t HCLKFreq = RCM_ReadHCLKFreq();
-            ^
-main.c(339): warning: unused variable 'LockI2C' [-Wunused-variable]
-   static uint8_t LockI2C = 0;
-                  ^
 main.c(356): warning: variable 'count' set but not used [-Wunused-but-set-variable]
    uint8_t count = 0;
            ^
+main.c(338): warning: variable 'dataI2C' set but not used [-Wunused-but-set-variable]
+   static uint8_t dataI2C = 0;
+                  ^
+main.c(339): warning: unused variable 'LockI2C' [-Wunused-variable]
+   static uint8_t LockI2C = 0;
+                  ^
+main.c(346): warning: unused variable 'SYSCLKFreq' [-Wunused-variable]
+   uint32_t SYSCLKFreq = RCM_ReadSYSCLKFreq();
+            ^
+main.c(345): warning: unused variable 'HCLKFreq' [-Wunused-variable]
+   uint32_t HCLKFreq = RCM_ReadHCLKFreq();
+            ^
 main.c(392): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void IRQ_Init()
              ^
@@ -1433,12 +1430,12 @@ main.c(411): note: declare 'static' if the function is not intended to be used o
 void I2C3_ER_IRQHandler()
 ^
 static 
-446 warnings generated.
+445 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=12444 RO-data=732 RW-data=168 ZI-data=35792  
+Program Size: Code=12988 RO-data=732 RW-data=168 ZI-data=35792  
 FromELF: creating hex file...
-".\Objects\MisosERA.axf" - 0 Error(s), 446 Warning(s).
+".\Objects\MisosERA.axf" - 0 Error(s), 445 Warning(s).
 
 <h2>Software Packages used:</h2>
 

@@ -72,58 +72,7 @@ void i2c_init(void)
    I2C3->CTRL1_B.ACKEN = 0x1;
 }
 
-uint8_t i2c_read(uint8_t address, uint8_t registry)
-{
-   delay = TimeOut;
-   while(I2C3->STS2_B.BUSBSYFLG){ 
-   if((delay--) == 0) return 1;};
-   I2C3->CTRL1_B.START = 0x1;
-   (void) I2C3->STS1;
-   
-   while(!I2C3->STS1_B.STARTFLG){};
-   I2C3->DATA = address << 1;
-      
-   delay = TimeOut;  
-   while(!I2C3->STS1_B.ADDRFLG){ 
-   if((delay--) == 0) return 1;};
-   (void) I2C3->STS1;
-   (void) I2C3->STS2;
-   
-   delay = TimeOut;
-   while(!I2C3->STS1_B.TXBEFLG){ 
-   if((delay--) == 0) return 1;};
-   I2C3->DATA = registry;
-   
-   //I2C3->CTRL1_B.STOP = 0x1;
-   //while(!I2C3->STS1_B.STOPFLG);
-   
-   I2C3->CTRL1_B.START = 0x1;
-   while(!I2C3->STS1_B.STARTFLG){};
-      
-   I2C3->DATA = address << 1 | 1;
-   
-   delay = TimeOut;   
-   while(!I2C3->STS1_B.ADDRFLG){ 
-   if((delay--) == 0) return 1;};
-   I2C3->CTRL1_B.ACKEN = 0x0;
-      
-   (void) I2C3->STS2;
-   
-   delay = TimeOut;
-   while(!I2C3->STS1_B.RXBNEFLG){ 
-   if((delay--) == 0) return 1;};
-   uint8_t value = (uint8_t)I2C3->DATA;
-      
-   I2C3->CTRL1_B.STOP = 0x1;
-   //while(!I2C3->STS1_B.STOPFLG);
-   I2C3->CTRL1_B.ACKEN = 0x1;
-      
-   I2C_ClearErrorFlag();
-      
-      
-   return value;
-   
-}
+
 
 
 void i2c_read_many(uint8_t address, uint8_t registry, uint8_t * result, uint8_t length)
@@ -212,6 +161,56 @@ void i2c_write_many(uint8_t address, uint8_t registry, uint8_t* buf, uint32_t le
    I2C3->CTRL1_B.STOP = 0x1;
 }
 
+uint8_t i2c_read(uint8_t address, uint8_t registry)
+{
+   delay = TimeOut;
+   while(I2C3->STS2_B.BUSBSYFLG){ 
+   if((delay--) == 0) return 1;};
+   I2C3->CTRL1_B.START = 0x1;
+   (void) I2C3->STS1;
+   
+   while(!I2C3->STS1_B.STARTFLG){};
+   I2C3->DATA = address << 1;
+      
+   delay = TimeOut;  
+   while(!I2C3->STS1_B.ADDRFLG){ 
+   if((delay--) == 0) return 1;};
+   (void) I2C3->STS1;
+   (void) I2C3->STS2;
+   
+   delay = TimeOut;
+   while(!I2C3->STS1_B.TXBEFLG){ 
+   if((delay--) == 0) return 1;};
+   I2C3->DATA = registry;
+   
+   //I2C3->CTRL1_B.STOP = 0x1;
+   //while(!I2C3->STS1_B.STOPFLG);
+   
+   I2C3->CTRL1_B.START = 0x1;
+   while(!I2C3->STS1_B.STARTFLG){};
+      
+   I2C3->DATA = address << 1 | 1;
+   
+   delay = TimeOut;   
+   while(!I2C3->STS1_B.ADDRFLG){ 
+   if((delay--) == 0) return 1;};
+   I2C3->CTRL1_B.ACKEN = 0x0;
+      
+   (void) I2C3->STS2;
+   
+   delay = TimeOut;
+   while(!I2C3->STS1_B.RXBNEFLG){ 
+   if((delay--) == 0) return 1;};
+   uint8_t value = (uint8_t)I2C3->DATA;
+      
+   I2C3->CTRL1_B.STOP = 0x1;
+   //while(!I2C3->STS1_B.STOPFLG);
+   I2C3->CTRL1_B.ACKEN = 0x1;
+      
+   I2C_ClearErrorFlag(); 
+   return value;  
+}
+
 void i2c_write(uint8_t address, uint8_t registry, uint8_t data)
 {
    //I2C3->CTRL1_B.ACKEN = 0x1; // Test !!
@@ -220,34 +219,36 @@ void i2c_write(uint8_t address, uint8_t registry, uint8_t data)
    
    delay = TimeOut;
    while(!(I2C3->STS1_B.STARTFLG)){ 
-   if((delay--) == 0) return;};
+      if((delay--) == 0) return;};
    
    (void) I2C3->STS1;
-   I2C3->DATA_B.DATA = address << 1;                // Write device address
+   while(!I2C3->STS1_B.STARTFLG){};
+   I2C3->DATA = address << 1;
+      
+   delay = TimeOut;  
+   while(!I2C3->STS1_B.ADDRFLG){ 
+   if((delay--) == 0) return;};
+   (void) I2C3->STS1;
+   (void) I2C3->STS2;
    
    delay = TimeOut;
-   while(!(I2C3->STS1_B.ADDRFLG)){ 
+   while(!I2C3->STS1_B.TXBEFLG){ 
    if((delay--) == 0) return;};
-   
-   //int a = 5;
-   //while(a--)
-   
-   delay = TimeOut;
-   while(!(I2C3->STS1_B.TXBEFLG)){if(ErrorI2C) 
-   if((delay--) == 0) return;};
-   
    I2C3->DATA = registry;
    
+   delay = TimeOut;
+   while(!(I2C_ReadEventStatus(I2C3, I2C_EVENT_MASTER_BYTE_TRANSMITTED))){ 
+   if((delay--) == 0) return;};
+   
+   I2C3->DATA_B.DATA = data;
+   
+   delay = TimeOut;
+   while(!(I2C_ReadEventStatus(I2C3, I2C_EVENT_MASTER_BYTE_TRANSMITTED))){ 
+   if((delay--) == 0) return;};
+
    I2C3->CTRL1_B.STOP = 0x1;
    
-   delay = TimeOut * 2;
-   while(!(I2C3->STS1_B.BTCFLG));//{ 
-      ///if((delay--) == 0) 
-      //   return;};
-   
-   I2C3->DATA = data;
-   
-  
+   I2C_ClearErrorFlag();
    
    //I2C3->CTRL1_B.STOP = 0x0;
 }
